@@ -1,4 +1,4 @@
-{% set version = "0.2.7" %}
+{% set version = "0.2.8" %}
 
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
@@ -11,7 +11,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/bain_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/bain/bain_{{ version }}.tar.gz
-  sha256: 1f993302237afd2e954d09c036e97c6efbc428d26d3d7746fd31841ddfb505cc
+  sha256: e6007ce4ce45fd879ab2d2d9a2d2a046e8a444055cecdef9afd99a1a5ca73980
 
 build:
   merge_build_host: true  # [win]
