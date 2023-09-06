@@ -3,6 +3,7 @@ About r-bain-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-bain-feedstock/blob/main/LICENSE.txt)
 
+
 About r-bain
 ------------
 
@@ -11,6 +12,7 @@ Home: https://informative-hypotheses.sites.uu.nl/software/bain/
 Package license: GPL-3.0-or-later
 
 Summary: Computes approximated adjusted fractional Bayes factors for equality, inequality, and about equality constrained hypotheses. S3 methods are available for specific types of lm() models, namely ANOVA, ANCOVA, and multiple regression, and for the t_test(). The statistical underpinnings are described in Gu, Mulder, and Hoijtink, (2018) <DOI:10.1111/bmsp.12110>, Hoijtink, Gu, and Mulder, (2018) <DOI:10.1111/bmsp.12145>, and Hoijtink, Gu, Mulder, and Rosseel, (2018) <DOI:10.1037/met0000187>.
+
 About r-bain
 ------------
 
