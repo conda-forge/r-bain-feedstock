@@ -1,4 +1,4 @@
-{% set version = "0.2.10" %}
+{% set version = "0.2.11" %}
 
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
@@ -11,7 +11,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/bain_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/bain/bain_{{ version }}.tar.gz
-  sha256: 50559e9b09e21440499370b4a2080447278d35908f64930fb17eb7d72cf9d3ce
+  sha256: 8c7a8b07bc954231372c4551a5898ec21c8a9451f2ae14c4c107c534e208f18c
 
 build:
   merge_build_host: true  # [win]
@@ -23,7 +23,9 @@ build:
 requirements:
   build:
     - {{ compiler('c') }}              # [not win]
+    - {{ stdlib("c") }}                # [not win]
     - {{ compiler('m2w64_c') }}        # [win]
+    - {{ stdlib("m2w64_c") }}          # [win]
     - {{ compiler('fortran') }}        # [not win]
     - {{ compiler('m2w64_fortran') }}  # [win]
     - {{ posix }}filesystem        # [win]
